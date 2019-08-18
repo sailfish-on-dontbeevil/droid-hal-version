@@ -32,7 +32,7 @@ License: BSD-3-Clause
 Source:  %{name}-%{version}.tar.gz
 
 # Generic dependencies
-BuildRequires: droid-hal
+#BuildRequires: droid-hal
 BuildRequires: droid-config
 BuildRequires: droid-config-sailfish
 %if 0%{!?native_build:1}
@@ -50,10 +50,10 @@ BuildRequires: droid-bin
 %endif
 
 # Kernel & Boot
-BuildRequires: droid-hal-kernel
-BuildRequires: droid-hal-img-boot
-BuildRequires: droid-hal-img-recovery
-BuildRequires: droid-config-preinit-plugins
+#BuildRequires: droid-hal-kernel
+#BuildRequires: droid-hal-img-boot
+#BuildRequires: droid-hal-img-recovery
+#BuildRequires: droid-config-preinit-plugins
 
 # Kernel modules
 %if 0%{?have_kernel_modules:1}
